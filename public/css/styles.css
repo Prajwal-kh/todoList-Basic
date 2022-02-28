@@ -1,0 +1,110 @@
+/* refer W3schools/css selectors for types of selectors  */
+body {
+  background-color: #E4E9FD;
+  background-image: -webkit-linear-gradient(110deg, #398AB9 50%, #E4E9FD 50%);
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+}
+
+h1 {
+  color: #F7F7F7;
+  padding: 12px;
+}
+
+.box {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #F7F7F7;
+  border-radius: 7px;
+  box-shadow: 10px 5px 20px -5px rgba(0, 0, 0, 0.35);
+}
+
+#heading {
+  background-color: #5D8BF4;
+  text-align: center;
+}
+
+.item {
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+/* psudo class checked, so change style of p tag which is placed immediatly after checkbox */
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #5D8BF4;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+.copyrights{
+  font-size: 0.9rem;
+  color: grey;
+  margin-top: 20px;
+  opacity: 1;
+}
+
+em:hover{
+  font-size: 1.04rem;
+  color: #A683E3;
+}
+
+form {
+  text-align: center;
+  margin-left: 25px;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #A683E3;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 3px;
+  border-width: 0;
+  font-size: 40px;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 300;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #A683E3;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}

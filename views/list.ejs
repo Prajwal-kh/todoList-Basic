@@ -1,0 +1,26 @@
+<!-- This is a webpage to pass data to server app.js using app.post() or to receive some data from server app.get() -->
+
+<%- include("header") -%>
+<body>
+  <div class="box" id="heading">
+    <!-- Now we are targeting todoList type like work & daily Routien  -->
+    <h1><%= typeList %></h1>
+  </div>
+
+  <div class="box">
+    <% for(let i=0;i<kindOfTasks.length;i++){ %>
+    <div class="item">
+      <input type="checkbox">
+      <p><%= kindOfTasks[i] %></p>
+    </div>
+    <% } %>
+
+    <form class="item" action="/" method="post">
+      <input type="text" name="todoListItem" placeholder="Enter your next task" autocomplete="off" autofocus="on">
+      <button type="submit" name="addButton" value=<%= typeList %>>+</button>
+    </form>
+  </div>
+</body>
+
+<%- include("footer")-%>
+</html>
